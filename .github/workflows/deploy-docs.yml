@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'npm'
@@ -23,8 +23,8 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: VE1YxArv25HszdDpBMnD4t5x
-          TURBO_TEAM: biel-team
+          TURBO_TOKEN: mdUJREXmwoKpIAQa7GmGVK2u
+          TURBO_TEAM: gabrieltp087
 
       - name: Deploy storybook
         working-directory: ./packages/docs
