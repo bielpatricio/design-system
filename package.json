@@ -5,11 +5,15 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build",
     "dev_docs": "cd packages/docs && npm run dev",
-    "dev_react": "cd packages/react && npm run dev"
+    "dev_react": "cd packages/react && npm run dev",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run dev --filter=packages/docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "turbo": "^1.6.3"
   }
 }

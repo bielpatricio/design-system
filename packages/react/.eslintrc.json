@@ -1,5 +1,5 @@
 {
-  "extends": "@ignite-ui/eslint-config",
+  "extends": "@biel-ui/eslint-config",
   "rules": {
     "no-unused-vars": "off",
     "prettier/prettier": [
