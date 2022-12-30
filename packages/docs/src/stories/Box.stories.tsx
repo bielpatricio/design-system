@@ -10,6 +10,7 @@ export default {
         <Text>Testando Box</Text>
       </>
     ),
+    variant: 'primary',
   },
   argTypes: {
     children: {
@@ -21,3 +22,9 @@ export default {
 } as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {}
+
+export const Secondary: StoryObj<BoxProps> = {
+  args: {
+    variant: 'secondary',
+  },
+}
