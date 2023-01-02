@@ -1,9 +1,9 @@
 {
   "name": "@biel-ui/react",
-  "version": "4.2.0",
+  "version": "4.1.0",
   "description": "",
-  "main": "./dist/index.tsx",
-  "module": "./dist/index.mts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",

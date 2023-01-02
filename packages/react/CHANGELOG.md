@@ -1,11 +1,3 @@
-# @biel-ui/react
-
-## 4.2.0
-
-### Minor Changes
-
-- change main of package.json of react
-
 ## 4.1.0
 
 ### Minor Changes
