@@ -1,7 +1,7 @@
 {
   "name": "@biel-ui/react",
-  "version": "4.1.0",
-  "description": "",
+  "version": "4.2.0",
+  "description": "React component lib",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -11,8 +11,11 @@
     "lint": "npx eslint src --ext .ts,.tsx --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriel Patricio <https://github.com/bielpatricio>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@biel-ui/eslint-config": "*",
     "@biel-ui/tokens": "*",
