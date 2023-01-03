@@ -1,6 +1,6 @@
 {
   "name": "@biel-ui/react",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "React component lib",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,6 +10,9 @@
     "dev": "tsup src/index.tsx --format esm,cjs --external react --watch",
     "lint": "npx eslint src --ext .ts,.tsx --fix"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Gabriel Patricio <https://github.com/bielpatricio>",
   "license": "MIT",

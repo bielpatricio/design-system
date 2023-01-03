@@ -1,5 +1,11 @@
 ## 4.1.0
 
+## 5.0.0
+
+### Major Changes
+
+- Final details
+
 ## 4.2.0
 
 ### Minor Changes
