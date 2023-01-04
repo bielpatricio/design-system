@@ -1,5 +1,11 @@
 # @biel-ui/tokens
 
+## 3.1.0
+
+### Minor Changes
+
+- Add color to error message
+
 ## 3.0.0
 
 ### Major Changes
