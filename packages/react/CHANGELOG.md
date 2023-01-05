@@ -1,5 +1,11 @@
 ## 4.1.0
 
+## 5.0.2
+
+### Patch Changes
+
+- Changing color of checkbox
+
 ## 5.0.1
 
 ### Patch Changes
