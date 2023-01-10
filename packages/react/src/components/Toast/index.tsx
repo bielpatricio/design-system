@@ -14,14 +14,16 @@ import ptBR from 'date-fns/locale/pt-BR'
 
 export interface ToastProps extends ComponentProps<typeof ToastRadix.Root> {
   title: string
-  ButtonTitle: string
+  buttonTitle: string
   dateDescription: Date
+  buttonType: 'button' | 'reset' | 'submit'
 }
 
 export function Toast({
   title,
+  buttonTitle,
   dateDescription,
-  ButtonTitle,
+  buttonType = 'button',
   ...props
 }: ToastProps) {
   const [open, setOpen] = useState(false)
@@ -51,8 +53,9 @@ export function Toast({
             setOpen(true)
           }, 100)
         }}
+        type={buttonType}
       >
-        {ButtonTitle}
+        {buttonTitle}
       </Button>
       <ToastContainer {...props} open={open} onOpenChange={setOpen}>
         <ToastTitle>
@@ -67,7 +70,6 @@ export function Toast({
         </ToastDescription>
         <ToastAction asChild altText="Close">
           <Button variant="tertiary" size="md">
-            {/* X */}
             <X size={16} />
           </Button>
         </ToastAction>
