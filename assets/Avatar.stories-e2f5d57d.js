@@ -1,0 +1,2 @@
+import{A as t}from"./index-70d7f663.js";import"./index-cb59b577.js";import"./es.object.get-own-property-descriptor-b0ef2764.js";import"./index-e13ec8bb.js";import"./jsx-runtime-d9537fda.js";const p={title:"Typography/Avatar",component:t,args:{src:"https://github.com/bielpatricio.png",alt:"Gabriel Patricio"},argTypes:{src:{control:{type:"text"}}}},c={},e={args:{src:void 0}},m=["Primary","withFallback"];export{c as Primary,m as __namedExportsOrder,p as default,e as withFallback};
+//# sourceMappingURL=Avatar.stories-e2f5d57d.js.map
