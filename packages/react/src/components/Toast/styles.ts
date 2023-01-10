@@ -61,4 +61,34 @@ export const ToastAction = styled(Toast.Action, {
   display: 'flex',
   alignItems: 'flex-start',
   justifyContent: 'flex-end',
+  background: 'transparent',
+  color: '$gray100',
+  border: 'none',
+  '&:hover': {
+    background: 'transparent',
+    border: 'none',
+    cursor: 'pointer',
+    color: '$white',
+  },
+  '&:focus': {
+    background: 'transparent',
+    border: 'none',
+    color: '$white',
+  },
+})
+
+export const ToastRadixViewport = styled(Toast.Viewport, {
+  position: 'fixed',
+  bottom: 0,
+  right: 0,
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '10px',
+  padding: '25px',
+  width: '390px',
+  maxWidth: '100vw',
+  margin: 0,
+  listStyle: 'none',
+  zIndex: '2147483647',
+  outline: 'none',
 })

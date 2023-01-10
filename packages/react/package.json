@@ -1,6 +1,6 @@
 {
   "name": "@biel-ui/react",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "React component lib",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

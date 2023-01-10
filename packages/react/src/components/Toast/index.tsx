@@ -1,12 +1,12 @@
-import { ComponentProps, useEffect, useRef, useState } from 'react'
+import { ComponentProps, useEffect, useState } from 'react'
 import {
   ToastAction,
   ToastContainer,
   ToastDescription,
+  ToastRadixViewport,
   ToastTitle,
 } from './styles'
 import * as ToastRadix from '@radix-ui/react-toast'
-import { Button } from '../Button'
 import { Text } from '../Text'
 import { X } from 'phosphor-react'
 import { format } from 'date-fns'
@@ -53,13 +53,11 @@ export function Toast({
           </Text>
         </ToastDescription>
         <ToastAction asChild altText="Close">
-          <Button variant="tertiary" size="md">
-            <X size={16} />
-          </Button>
+          <X size={16} />
         </ToastAction>
       </ToastContainer>
 
-      <ToastRadix.Viewport />
+      <ToastRadixViewport />
     </ToastRadix.Provider>
   )
 }
