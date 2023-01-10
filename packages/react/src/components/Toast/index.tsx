@@ -14,30 +14,26 @@ import ptBR from 'date-fns/locale/pt-BR'
 
 export interface ToastProps extends ComponentProps<typeof ToastRadix.Root> {
   title: string
-  buttonTitle: string
   dateDescription: Date
-  buttonType: 'button' | 'reset' | 'submit'
+  openToast: boolean
 }
 
 export function Toast({
   title,
-  buttonTitle,
   dateDescription,
-  buttonType = 'button',
+  openToast = false,
   ...props
 }: ToastProps) {
   const [open, setOpen] = useState(false)
-  const timerRef = useRef(0)
-
-  useEffect(() => {
-    return () => clearTimeout(timerRef.current)
-  }, [])
-
   const description = format(
     dateDescription,
     "eeee',' dd 'de' MMMM 'às' HH'h'",
     { locale: ptBR },
   )
+
+  useEffect(() => {
+    setOpen(openToast)
+  }, [openToast])
 
   return (
     <ToastRadix.Provider
@@ -45,18 +41,6 @@ export function Toast({
       duration={5000}
       label="Notification"
     >
-      <Button
-        onClick={() => {
-          setOpen(false)
-          window.clearTimeout(timerRef.current)
-          timerRef.current = window.setTimeout(() => {
-            setOpen(true)
-          }, 100)
-        }}
-        type={buttonType}
-      >
-        {buttonTitle}
-      </Button>
       <ToastContainer {...props} open={open} onOpenChange={setOpen}>
         <ToastTitle>
           <Text as="strong" size="xl">
